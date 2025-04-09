@@ -1,5 +1,9 @@
 /** @type {import('@remix-run/dev').AppConfig} */
-export default {
+module.exports = {
   cacheDirectory: "./node_modules/.cache/remix",
   ignoredRouteFiles: ["**/.*", "**/*.test.{ts,tsx}"],
+  serverBuildTarget: "vercel",
+  server: "./server.js",
 };
+
+
